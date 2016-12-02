@@ -1,0 +1,23 @@
+{
+  "name": "streamkey",
+  "version": "0.5.0",
+  "description": "Stream the keyboard of your pc to another one",
+  "main": "stramkey.js",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "keypress": "^0.2.1",
+    "robotjs": "^0.4.5",
+    "socket.io": "^1.7.1",
+    "socket.io-client": "^1.7.1"
+  },
+  "keywords": [
+    "keyboard",
+    "streaming",
+    "remote",
+    "control"
+  ],
+  "devDependencies": {},
+  "author": "Giacomo Cerquone <cerquone96@hotmail.it> (http://giacomocerquone.com)",
+  "homepage": "http://giacomocerquone.com",
+  "license": "MIT"
+}
