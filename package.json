@@ -2,7 +2,7 @@
   "name": "streamkey",
   "version": "0.5.0",
   "description": "Stream the keyboard of your pc to another one",
-  "main": "stramkey.js",
+  "main": "streamkey.js",
   "dependencies": {
     "commander": "^2.9.0",
     "keypress": "^0.2.1",
