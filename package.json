@@ -1,6 +1,6 @@
 {
   "name": "streamkey",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Stream the keyboard of your pc to another one",
   "main": "./streamkey.js",
   "dependencies": {
@@ -16,6 +16,7 @@
     "remote",
     "control"
   ],
+  "repository": "https://github.com/giacomocerquone/StreamKey/",
   "devDependencies": {},
   "author": "Giacomo Cerquone <cerquone96@hotmail.it> (http://giacomocerquone.com)",
   "homepage": "http://giacomocerquone.com",
