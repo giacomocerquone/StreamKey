@@ -5,7 +5,7 @@ StreamKey is an application to stream a keyboard of one PC to another (through w
 ## Screenshots
 | Client                                                     | Server                                                 |
 | ---------------------------------------------------------- | :----------------------------------------------------: |
-| ![streamkey client](./screenshots/streamkey-client.jpg)     | ![streamkey server](./screenshots/streamkey-server.jpg) |
+| ![streamkey client](./screenshots/streamkey-client.jpg?raw=true)     | ![streamkey server](./screenshots/streamkey-server.jpg?raw=true) |
 
 ## Caveats
 Two problems that StreamKey have (due to robotjs lib):
