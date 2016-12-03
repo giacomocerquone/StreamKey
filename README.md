@@ -2,6 +2,11 @@
 ### [Blog Post](http://blog.giacomocerquone.com/StreamKey-stream-your-keyboard/)
 StreamKey is an application to stream a keyboard of one PC to another (through websockets)
 
+## Screenshots
+| Client                                                     | Server                                                 |
+| ---------------------------------------------------------- | :----------------------------------------------------: |
+| ![streamkey client](./screenshots/streamkey-client.js)     | ![streamkey server](./screenshots/streamkey-server.js) |
+
 ## Caveats
 Two problems that StreamKey have (due to robotjs lib):
 - When an application is fullscreen on windows, streamkey doesn't correctly simulate key strokes ().
