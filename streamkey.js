@@ -1,7 +1,7 @@
 var program = require('commander');
 
 program
-  .version('0.5.0');
+  .version('0.6.5');
 
 program
   .command('server')
@@ -17,5 +17,5 @@ program
     console.log('Connecting to ' + ip);
     require("./src/client")(ip);
   });
-  
+
 program.parse(process.argv);
