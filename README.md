@@ -11,7 +11,7 @@ Two problems that StreamKey have (due to robotjs lib):
 Give `npm install -g streamkey` on both computers.
 
 ## Usage
-1a. Give `streamkey server` on the PC that hasn't a keyboard
+1a. Give `streamkey server` on the PC that hasn't a keyboard<br>
 1b. Give `streamkey client -i <local-ip-of-your-server>` on the pac that has got a keyboard
 
 ## License
