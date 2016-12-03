@@ -12,9 +12,9 @@ Give `npm install -g streamkey` on both computers.
 
 ## Usage
 1a. Give `streamkey server` on the PC that hasn't a keyboard<br>
-1b. Give `streamkey client -i <local-ip-of-your-server>` on the pac that has got a keyboard
+1b. Give `streamkey client -i <local-ip-of-your-server>` on the PC that has got a keyboard
 
 ## License
-Released under the MIT license.
-If you distribute a copy or make a fork of the project, I'd like you to credit this project as source.
+Released under the MIT license.<br>
+If you distribute a copy or make a fork of the project, I'd like you to credit this project as source.<br>
 Copyleft 2016, Giacomo cerquone.
