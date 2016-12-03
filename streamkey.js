@@ -6,7 +6,7 @@ program
 program
   .command('server')
   .action( function() {
-    require("./server")();
+    require("./src/server")();
   });
 
 program
@@ -15,7 +15,7 @@ program
   .action( function(options) {
     var ip = options.ip || "localhost";
     console.log('Connecting to ' + ip);
-    require("./client")(ip);
+    require("./src/client")(ip);
   });
   
 program.parse(process.argv);
