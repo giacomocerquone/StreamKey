@@ -1,6 +1,5 @@
 # StreamKey
-
-[Blog Post](http://blog.giacomocerquone.com/StreamKey-stream-your-keyboard/)
+### [Blog Post](http://blog.giacomocerquone.com/StreamKey-stream-your-keyboard/)
 StreamKey is an application to stream a keyboard of one PC to another (through websockets)
 
 ## Caveats
