@@ -1,6 +1,6 @@
 {
   "name": "streamkey",
-  "version": "0.6.1",
+  "version": "0.6.5",
   "description": "Stream the keyboard of your pc to another one",
   "main": "./streamkey.js",
   "dependencies": {
