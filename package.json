@@ -10,6 +10,9 @@
     "socket.io": "^1.7.1",
     "socket.io-client": "^1.7.1"
   },
+  "bin": {
+    "streamkey": "./streamkey.js"
+  },
   "keywords": [
     "keyboard",
     "streaming",
