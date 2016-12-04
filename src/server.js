@@ -25,11 +25,7 @@ function server() {
     socket.on('keypressed', function(data) {
       console.log(data);
       if(data.key.name) {
-        var modifiers = [];
-        for (var property in data.key) {
-          if (data.key.hasOwnProperty(property) && typeof(data.key[property]) === "boolean")
-            if (data.key[property]) modifiers.push(specialKeys[property]);
-        }
+        var modifiers = Object.keys(data.key).map(property => data.key[property] === true);
         robot.keyTap(data.key.name, modifiers);
       } else {
         robot.typeString(data.key); // Should use keyTap but it's bugged for special chars with accents etc.
