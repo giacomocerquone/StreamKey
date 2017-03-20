@@ -20,7 +20,15 @@
     "control"
   ],
   "repository": "https://github.com/giacomocerquone/StreamKey/",
-  "devDependencies": {},
+  "xo": {
+    "space": true,
+    "settings": {
+      "import/resolver": "node"
+    }
+  },
+  "devDependencies": {
+    "xo": "^0.17.1"
+  },
   "author": "Giacomo Cerquone <cerquone96@hotmail.it> (http://giacomocerquone.com)",
   "homepage": "http://giacomocerquone.com",
   "license": "MIT"

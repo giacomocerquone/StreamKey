@@ -1,30 +1,29 @@
 function server() {
-  var app   = require('http').createServer(handler);
-  var io    = require('socket.io')(app);
-  var fs    = require('fs');
+  var app = require('http').createServer(handler);
+  var io = require('socket.io')(app);
   var robot = require('robotjs');
   var specialKeys = {
-    ctrl: "control",
-    meta: "alt",
-    shift: "shift"
+    ctrl: 'control',
+    meta: 'alt',
+    shift: 'shift'
   };
-  var connectedClientIP = "";
+  var connectedClientIP = '';
 
   app.listen(3000);
-  console.log("Listening on 3000");
+  console.log('Listening on 3000');
 
   function handler(req, res) {
-      res.writeHead(200);
-      res.end("<div style='text-align:center'><h1>Streaming Keyboard is working!</h1><p>By Giacomo Cerquone</p></div>");
+    res.writeHead(200);
+    res.end('<div style="text-align:center"><h1>Streaming Keyboard is working!</h1><p>By Giacomo Cerquone</p></div>');
   }
 
-  io.on('connection', function(socket) {
+  io.on('connection', function (socket) {
     connectedClientIP = socket.handshake.address;
-    console.log("Coupled with " + connectedClientIP);
+    console.log('Coupled with ' + connectedClientIP);
 
-    socket.on('keypressed', function(data) {
+    socket.on('keypressed', function (data) {
       console.log(data);
-      if(data.key.name) {
+      if (data.key.name) {
         var modifiers = Object.keys(data.key).map(property => data.key[property] === true);
         robot.keyTap(data.key.name, modifiers);
       } else {
@@ -32,12 +31,11 @@ function server() {
       }
     });
 
-    socket.on('disconnect', function(data) {
+    socket.on('disconnect', function () {
       // clear the output of the console
       console.log('\x1Bc');
-      console.log(connectedClientIP + ' disconnected', "\nWaiting for a request...");
+      console.log(connectedClientIP + ' disconnected', '\nWaiting for a request...');
     });
-
   });
 }
 
